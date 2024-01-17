@@ -1,0 +1,170 @@
+::-webkit-scrollbar {
+	width: 8px;
+	height: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background: #4e4e4e;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #6e6e6e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #8e8e8e;
+}
+
+* {
+    user-select: none;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	font-family: "Monaco", monospace;
+}
+
+#mtext {
+	width: 256px;
+	display: block;
+	color: white;
+	height: 96px;
+}
+
+:root {
+	/* monokai */
+	--light: #272822;
+	--dark: #2D2A2E;
+	--border: #6e6e6e;
+	--border-light: #4e4e4e;
+	--border-dark: #8e8e8e;
+}
+
+#cover span {
+	font-size: 1.5em;
+}
+
+#cover i {
+	font-size: 5em;
+}
+
+#cover {
+	color: white;
+}
+
+#cover {
+	width: 100vw;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	position: absolute;
+	z-index: 999;
+	background-color: #23272A;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#block {
+    text-align: center;
+	top: 50vh;
+	left: 50vw;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background-color: #2D2A2E;
+	border-radius: 40px;
+	border: 5px solid #272822;
+	text-transform: uppercase;
+	padding: 24px;
+	z-index: 60;
+}
+
+#block input[type=button] {
+	width: 100%;
+	background-color: #272822;
+	padding: 12px 20px;
+	color: #A7A8A2;
+	border: 4px solid #272822;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+#block input[type=button]:active {
+	background-color: #2A2B25;
+}
+
+.cselect {
+	position: relative;
+	font-family: Arial;
+}
+
+.cselect select {
+	display: none;
+}
+
+.cselectsel {
+	background-color: #2D2A2E;
+}
+
+.cselectsel:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+.cselectsel.cselectarrowact:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+}
+
+.cselectitems div,
+.cselectsel {
+	color: #A7A8A2;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+}
+
+.cselectitems div:last-child {
+	border-radius: 0 0 15px 15px;
+}
+
+.cselectitems {
+	position: absolute;
+	background-color: #272822;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	border-radius: 0 0 15px 15px;
+}
+
+.cselecthide {
+	display: none;
+}
+
+.cselectitems div:hover,
+.cselectsame {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 50;
+    pointer-events: none;
+}
