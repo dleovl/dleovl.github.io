@@ -251,14 +251,16 @@ function chooseMethod(element) {
     switch(element.innerHTML) {
         case "./":
             $("#mtext").html("<br><br>dleovl<br>");
+            $("#twitter").show();
 			$("#github").hide();
             break;
 		// i cba to detect whether or not the click comes from the nav or the actual items so replace
         case "./repo/":
             window.location.replace("./repo/");
             break;
-        case "About":
+        case "whoami":
 			$("#mtext").html("<br><br>i am dleovl<br>i do things");
+            $("#twitter").hide();
 			$("#github").show();
             break;
     }
@@ -266,6 +268,10 @@ function chooseMethod(element) {
 
 function github() {
 	window.open("https://github.com/dleovl/", "_blank");
+}
+
+function twitter() {
+	window.open("https://twitter.com/dleovl/", "_blank");
 }
 
 $(function() {
