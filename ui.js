@@ -250,7 +250,7 @@ function chooseMethod(element) {
     // too lazy to make this modular so enjoy your non-nintendo switch
     switch(element.innerHTML) {
         case "./":
-            $("#mtext").html("<br><br>dleovl<br>");
+            $("#mtext").html("<br><br>dleovl<br>135246");
             $("#twitter").show();
 			$("#github").hide();
             break;
