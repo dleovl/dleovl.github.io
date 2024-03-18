@@ -1,7 +1,7 @@
-// Modified from chrisandriessen.nl
-
 function runBg() {
-    ranBg = true;
+
+    // Modified from chrisandriessen.nl
+
     (function() {
         var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
             window.setTimeout(callback, 1000 / 30); // 60
@@ -175,7 +175,9 @@ function runBg() {
 }
 
 $(function() {
-    // modified custom-select from somewhere
+
+    // Modified custom-select
+
     var x, i, j, l, ll, selElmnt, a, b, c;
     x = document.getElementsByClassName("cselect");
     l = x.length;
@@ -247,7 +249,6 @@ $(function() {
 });
 
 function chooseMethod(element) {
-    // too lazy to make this modular so enjoy your non-nintendo switch
     switch(element.innerHTML) {
         case "./":
             $("#mtext").html("<br><br>dleovl<br>135246");

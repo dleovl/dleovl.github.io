@@ -84,7 +84,7 @@ body {
 	z-index: 60;
 }
 
-#block input[type=button] {
+#block a {
 	width: 100%;
 	background-color: #272822;
 	padding: 12px 20px;
@@ -92,6 +92,7 @@ body {
 	border: 4px solid #272822;
 	border-radius: 15px;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 #block input[type=button]:active {
