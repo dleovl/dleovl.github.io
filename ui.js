@@ -255,8 +255,8 @@ function chooseMethod(element) {
             $("#twitter").show();
 			$("#github").hide();
             break;
-		// i cba to detect whether or not the click comes from the nav or the actual items so replace
         case "./repo/":
+            // i cba to detect whether or not the click comes from the nav or the actual items so replace
             window.location.replace("./repo/");
             break;
         case "whoami":
@@ -265,14 +265,6 @@ function chooseMethod(element) {
 			$("#github").show();
             break;
     }
-}
-
-function github() {
-	window.open("https://github.com/dleovl/", "_blank");
-}
-
-function twitter() {
-	window.open("https://twitter.com/dleovl/", "_blank");
 }
 
 $(function() {
